@@ -5,7 +5,7 @@ window.onload = function () {
         console.log(msg);
     });
     $(".btn").click(function () {
-        socket.emit("btn-click","btn.true","chip1");
+        socket.emit("changeToBluetooth","");
     });
     socket.on("web-test",function (msg) {
          console.log(msg);
